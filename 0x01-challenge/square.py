@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Fixing class Square"""
+"""class Square"""
 
 
 class square:
@@ -9,6 +9,7 @@ class square:
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """Instantiation of class"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -26,7 +27,7 @@ class square:
 
 
 if __name__ == "__main__":
-
+    """ Main entry point """
     s = square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
