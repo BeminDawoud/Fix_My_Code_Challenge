@@ -1,8 +1,9 @@
 ##!/usr/bin/python3
+"""Fixing class Square"""
 
 
 class square:
-    """class of a square or a rectabgle"""
+    """Class Square"""
 
     width = 0
     height = 0
@@ -16,9 +17,11 @@ class square:
         return self.width * self.height
 
     def PermiterOfMySquare(self):
+        """Permiter of the square"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """string representation of the square"""
         return "{}/{}".format(self.width, self.height)
 
 
